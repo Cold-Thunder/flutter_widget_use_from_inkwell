@@ -29,7 +29,11 @@ class _UseSnackbarState extends State<UseSnackbar> {
         alignment: Alignment.center,
         child: Column(
           children: [
+            // controlling multi clicking on showing snackbar
             ElevatedButton(
+              style: !enable ? ElevatedButton.styleFrom(
+                backgroundColor: Colors.grey,
+              ) : null,
               onPressed: () {
                 if(enable){
                   Methods.snackBarMethod(context);

@@ -17,7 +17,7 @@ class Methods{
               borderRadius: BorderRadius.circular(10)
           ),
         behavior: SnackBarBehavior.floating,
-        duration: Duration(seconds: 5),
+        duration: Duration(seconds: 3),
         elevation: 10,
         action: SnackBarAction(
           label: 'Dismiss',
