@@ -11,6 +11,10 @@ class HomePageMain extends StatelessWidget{
         theme: ThemeData(
           appBarTheme: AppBarTheme(
             backgroundColor: Colors.purple,
+            titleTextStyle: TextStyle(
+              fontSize: 22,
+              color: Colors.white
+            ),
             iconTheme: IconThemeData(
               color: Colors.white
             )
