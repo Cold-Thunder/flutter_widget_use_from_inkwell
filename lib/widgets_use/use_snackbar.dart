@@ -31,26 +31,32 @@ class _UseSnackbarState extends State<UseSnackbar> {
           children: [
             // controlling multi clicking on showing snackbar
             ElevatedButton(
-              style: !enable ? ElevatedButton.styleFrom(
-                backgroundColor: Colors.grey,
-              ) : null,
+              style: !enable
+                  ? ElevatedButton.styleFrom(
+                      backgroundColor: Colors.grey,
+                    )
+                  : null,
               onPressed: () {
-                if(enable){
+                // multiple click controller
+                if (enable) {
                   Methods.snackBarMethod(context);
                   setState(() {
                     enable = false;
                   });
-                  Timer(Duration(seconds: 3), (){
-                    setState((){
-                      enable = true;
-                    });
-                  });
+                  Timer(
+                    Duration(seconds: 3),
+                        () {
+                      setState(
+                            () {
+                          enable = true;
+                        },
+                      );
+                    },
+                  );
                 }
               },
-
               child: Text('Show Snackbar'),
             ),
-
           ],
         ),
       ),

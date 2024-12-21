@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Methods{
+  ///snack bar
   static void snackBarMethod(BuildContext context){
       final snack = SnackBar(
         width: 200,
@@ -29,4 +30,6 @@ class Methods{
       );
       ScaffoldMessenger.of(context).showSnackBar(snack);
     }
+
+
 }
