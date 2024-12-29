@@ -3,6 +3,7 @@ import 'package:widgets_use/screens/home_page.dart';
 import 'package:widgets_use/widgets_use/checkbox_radiobutton_uses/radiobutton_used.dart';
 import 'package:widgets_use/widgets_use/checkbox_radiobutton_uses/use_check_checkboxlisttile.dart';
 import 'package:widgets_use/widgets_use/scroll_widgets/page_view_widget_use.dart';
+import 'package:widgets_use/widgets_use/uses_of_flutter_switch/flutter_switch.dart';
 
 class HomePageMain extends StatelessWidget{
   const HomePageMain({super.key});
@@ -37,7 +38,7 @@ class HomePageMain extends StatelessWidget{
           )
         ),
       routes: {
-          '/': (context)=>RadiobuttonUsed()
+          '/': (context)=>FlutterSwitch()
       },
       initialRoute: '/'
     );
