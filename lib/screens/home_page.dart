@@ -5,6 +5,7 @@ import 'package:widgets_use/widgets_use/card_widget_use.dart';
 import 'package:widgets_use/widgets_use/elevated_button_use.dart';
 import 'package:widgets_use/widgets_use/gesture_detector_use.dart';
 import 'package:widgets_use/widgets_use/inkwell_use.dart';
+import 'package:widgets_use/widgets_use/progress_bar_widget.dart';
 import 'package:widgets_use/widgets_use/tool_tip_use.dart';
 import 'package:widgets_use/widgets_use/use_snackbar.dart';
 
@@ -67,7 +68,8 @@ class HomePage extends StatelessWidget {
                       color: Colors.black
                     )
                   )
-              )
+              ),
+              ElevatedButtonUse(title: 'Progress Bar', screen: ProgressBarUse())
             ],
           ),
         ),
